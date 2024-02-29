@@ -1,0 +1,204 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  
+}
+
+body {
+  margin-bottom: 60px;
+
+}
+
+.imgWelcome{
+
+    height: 400px;
+    width: 400px;
+    margin-top : 50px;
+
+}
+
+.imgFactura {
+    height: 250px;
+    width: 250px;
+    margin-top: -550px;
+    margin-left: 620px;
+}
+
+.imgProducto {
+    height: 250px;
+    width: 250px;
+    margin-top: -750px;
+    margin-left: 620px;
+}
+
+
+
+
+
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 15px; /* Ajusta el espacio para evitar que el contenido se superponga con el sidebar */
+}
+
+.sidebar {
+    background-color: purple; /* Cambia el color de fondo según tus preferencias */
+    border-left: 1px solid #e9ecef; /* Añade un borde izquierdo */
+    height: 100vh; /* Haz que el sidebar ocupe toda la altura de la pantalla */
+    text-align: center;
+    width: 250px; /* Ajusta el ancho según tus preferencias */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    align-content: center;
+    
+    border: 2px solid #0026ff;
+    padding-top: 56px; /* Ajusta el espacio superior según el tamaño de la barra de navegación */
+}
+
+    .sidebar .navbar-nav {
+        flex-direction: column;
+        margin-top: 30px;
+        
+    }
+
+.navbar {
+    
+    z-index: 2; /* Asegura que la barra de navegación esté encima del sidebar */
+}
+
+.navbar-toggler {
+    order: 1;
+}
+
+.navbar-brand {
+    order: 2;
+}
+
+
+.navbar-collapse {
+    order: 3;
+}
+
+
+
+.col-md-4-edit {
+    margin-left: 450px;
+    width: 400px;
+    height: 1150px;
+    background-color: #d3d1d1;
+    border-radius: 30px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.col-md-4 {
+    width: 400px;
+    height: 1150px;
+
+}
+.col-md-4-2 {
+    width: 400px;
+    height: 400px;
+}
+
+.col-md-4-3 {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+.text-center {
+    margin-top: 60px;
+}
+
+.container2 {
+    border: 2px solid black;
+    width : 1100px;
+    background-color: #d3d1d1;
+    border-radius: 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.imgCreate {
+    height: 300px;
+    width: 300px;
+    margin-left :600px;
+    margin-top: -1500px;
+}
+
+.ImageBar {
+    margin-top : 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.BotonCrear {
+    height: 30px;
+    /*margin-left: 550px;*/
+    width: 70px;
+    margin-top: 40px;
+}
+
+
+.BotonVolver {
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -25px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.container3 {
+    width: 1000px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+   
+}
+.container4 {
+    border: 2px solid black;
+    width: 1100px;
+    height : 650px;
+    background-color: #d3d1d1;
+    border-radius: 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.container5 {
+    width: 900px;
+    max-width: 850px;
+    position: relative;
+    z-index: 1;
+}
+
+.consultas {
+    border: 2px solid;
+}

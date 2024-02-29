@@ -1,0 +1,96 @@
+﻿@model EfPowerTools.Models.Producto
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h1>TABLA PRODUCTOS</h1></center>
+
+@* <h4>Producto</h4> *@
+<hr />
+<div class="row">
+
+    <div class="container4">
+
+    <div class="col-md-4-3">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    @*         <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="NombreProducto" class="control-label"></label>
+                <input asp-for="NombreProducto" class="form-control" />
+                <span asp-validation-for="NombreProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cantidad" class="control-label"></label>
+                <input asp-for="Cantidad" class="form-control" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="FechaIngreso" class="control-label">Fecha ingreso</label>
+                <input asp-for="FechaIngreso" class="form-control" />
+                <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="ImagenProducto" class="control-label">Imagen producto</label>
+                <input asp-for="ImagenProducto" class="form-control" />
+                <span asp-validation-for="ImagenProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="FechaVencimiento" class="control-label">Fecha vencimiento</label>
+                <input asp-for="FechaVencimiento" class="form-control" />
+                <span asp-validation-for="FechaVencimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Origen" class="control-label"></label>
+                <input asp-for="Origen" class="form-control" />
+                <span asp-validation-for="Origen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="CodigoInvima" class="control-label"> Codigo invima</label>
+                <input asp-for="CodigoInvima" class="form-control" />
+                <span asp-validation-for="CodigoInvima" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="TipoProducto" class="control-label">Tipo producto</label>
+                <input asp-for="TipoProducto" class="form-control" />
+                <span asp-validation-for="TipoProducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="NombreProveedor" class="control-label">Nombre proveedor</label>
+                <input asp-for="NombreProveedor" class="form-control" />
+                <span asp-validation-for="NombreProveedor" class="text-danger"></span>
+            </div>
+                <div class="BotonCrear">
+                    <input type="submit" value="Crear" class="btn btn-primary" />
+                </div>
+
+
+                <div class="BotonVolver">
+                    <a asp-action="Index"><black>Volver</black></a>
+                </div>
+            </form>
+
+            <div><img class="imgProducto" src="~/css/img/caja.png" /> </div>
+    </div>
+
+</div>
+</div>
+
+@* <div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
